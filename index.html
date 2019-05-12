@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="search-filters">
+            <input id="start" type="date" name="strtDate" >
+            <input id="end" type="date" name="endDate" >
+            <select name="currency" id="currency">
+                <option value="EUR">Euro</option>
+                <option value="USD">Dollar</option>
+                <option value="MXN">Mexican Peso</option>
+            </select>
+            <button id="btnSearch">Search</button>
+        </div>
+        <div class="api-results">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
